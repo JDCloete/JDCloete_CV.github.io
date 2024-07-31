@@ -1,12 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
-/*
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -99,7 +93,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #1e252d;
+		background-color: #000000;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -144,7 +138,7 @@ input, select, textarea {
 		}
 
 	body {
-		color: #212931;
+		color: #2969aa;
 	}
 
 	body, input, select, textarea {
@@ -4671,6 +4665,53 @@ input, select, textarea {
 
 		}
 
+		h4::before {  
+			transform: scaleX(0);
+			transform-origin: bottom right;
+		  }
+		  
+		  h4:hover::before {
+			transform: scaleX(1);
+			transform-origin: bottom left;
+		  }
+		  
+		  h4::before {
+			content: " ";
+			display: block;
+			position: absolute;
+			top: 0; right: 0; bottom: 0; left: 0;
+			inset: 0 0 0 0;
+			background: hsl(204, 84%, 52%);
+			z-index: -1;
+			transition: transform .3s ease;
+		  }
+		  
+		  h4 {
+			position: relative;
+			font-size: 2.1rem;
+		  }
+		  
+		  html {
+			block-size: 100%;
+			inline-size: 100%;
+		  }
+		  
+		  body {
+			min-block-size: 100%;
+			min-inline-size: 100%;
+			margin: 0;
+			box-sizing: border-box;
+			display: grid;
+			place-content: center;
+			font-family: system-ui, sans-serif;
+		  }
+		  
+		  @media (orientation: landscape) {
+			body {
+			  grid-auto-flow: column;
+			}
+		  }
+
 	@media screen and (max-width: 980px) {
 
 		body.is-navPanel-visible #wrapper {
@@ -4686,4 +4727,25 @@ input, select, textarea {
 			visibility: visible;
 		}
 
+		
 	}
+
+	/* Centering the container (if needed) */
+	.image.main {
+		display: flex;
+		justify-content: center; /* Center horizontally */
+		align-items: center; /* Center vertically if container has a set height */
+		height: 30vh; /* Adjust as needed for vertical centering */
+	}
+	
+	/* Styling the image to be round */
+	.image.main img {
+		border-radius: 60%; /* Makes the image round */
+		width: 200px; /* Adjust to your desired size */
+		height: 200px; /* Set height equal to width for a circle */
+		object-fit: cover; /* Ensures the image covers the circle without distortion */
+		border: 10px double #000000; /* Blue double border */
+
+	}
+  
+  
