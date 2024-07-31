@@ -19,3 +19,9 @@ COMPATIBILITY
 NAVIGATION
 
 
+Credits and Acknowledgements
+
+Library1 - Used for X
+Library2 - Used for Y
+Person - Helped with Z
+
