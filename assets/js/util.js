@@ -1,3 +1,5 @@
+/* Jacques De Villiers Cloete | Virtual Curriculum Vitae */
+
 (function($) {
 
 	/**
