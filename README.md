@@ -140,9 +140,6 @@ My main content is divided into several sections, each accessible by scrolling d
 
 ### 🙏 CREDITS AND ACKNOWLEDGEMENTS 
 
-Templates for Website: 
-- [HTML5_UP!](https://html5up.net/)
-
 SVG Images used for Skills:
 - [IconDuck](https://iconduck.com/)
 - [WorldVectorLogo](https://worldvectorlogo.com/)
